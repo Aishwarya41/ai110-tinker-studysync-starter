@@ -9,6 +9,10 @@ from scoring import session_rating
 
 def test_session_rating_boundary_90_is_great():
     assert session_rating(90) == "Great"
+def test_session_rating_boundary_80_is_good():
+    assert session_rating(80) == "Good"
+def test_session_rating_boundary_0_is_skip():
+    assert session_rating(0) == "Skip"
 
 
 # TODO: add at least one more test, e.g. a boundary case for "Skip" (a score
